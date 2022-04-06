@@ -1,6 +1,5 @@
 FROM kalilinux/kali-rolling
 
-LABEL maintainer="evling2020@gmail.com"
 ARG KALI_USER 
 ARG KALI_PASSWORD
 env KALI_USER=${KALI_USER} \
