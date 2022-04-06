@@ -1,2 +1,2 @@
 #!/bin/bash
-passwd && apt -y install kali-linux-large kali-desktop-xfce
+passwd && DEBIAN_FRONTEND=noninteractive apt -y install kali-linux-large kali-desktop-xfce
