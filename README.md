@@ -49,6 +49,9 @@ $ git clone https://github.com/guan4tou2/kali_on_docker.git
 $ cd kali_on_docker
 $ chmod 755 app/setup.sh
 $ docker-compose up -d
+$ docker exec -it container id /bin/bash
+root@kali:/data# cd ..
+root@kali:/# ./setup.sh
 ```
-進入機器後執行`./setu.sh`設定root，安裝kali桌面與套件
+setup.sh設定root密碼，安裝kali桌面與套件。
 
