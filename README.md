@@ -50,4 +50,5 @@ $ cd kali_on_docker
 $ chmod 755 setup.sh
 $ docker-compose up -d
 ```
+進入機器後執行`./setu.sh`設定root，安裝kali桌面與套件
 
