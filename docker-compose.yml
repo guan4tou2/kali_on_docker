@@ -15,7 +15,7 @@ services:
       TZ: 'Asia/Shanghai'
     hostname: kali.evling.me
     restart: always
-    network_mode: "host"
+    #network_mode: "host"
     tmpfs:
       - /run
       - /tmp
