@@ -1,9 +1,4 @@
 # docker-compose构建远程桌面kali
-## 背景
-公司机房虚拟机全是由 Centos 模板产生，又不支持嵌套虚拟化，但 Kali 又是基于 Debian 系统，没有办法，只有利用 Docker 来搞事情了。
-
-## 目标
-易雾君想要申请一台全新的虚机，部署好 Kali 基础环境，最重要的是 Kali 2020 主题，太爱了。还有就是能通过 3389 远程接入系统，尤其是 Jumserver 基于 rdp 接入 Kali 后自适应分辨率，使用体验简直了。那跟着易雾君的节拍来一步步搞定它。
 
 ## 操作指南
 易雾君考虑大家伙的操作便利性，习惯采用 docker-compose 来一键编排。
@@ -63,10 +58,6 @@ VOLUME /data /root /home/$KALI_USER
 ENTRYPOINT /etc/init.d/xrdp start && tail -F /var/log/xrdp-kali.log
 ```
 
-### 获取打包文件
-- 资源链接： https://pan.evling.me/s/AZH5WecYGzCHR9b
-- 访问密码： 关注公众号 `易雾山庄` ，回复 `获取密码` 即可得到访问密码，主要考虑到恶意爬虫对流量造成浪费，故增加这么个环节，望理解。
-
 ### 一键部署
 机器预先安装好 docker 和 docker-compose ，解压项目文件，按照上文配置后执行指令即可。
 ```bash
@@ -74,10 +65,4 @@ $ tar -zxvf kali_on_docker.tar.gz
 $ cd kali
 $ docker-compose up -d
 ```
-
-## 远程接入
-可以利用 Windows 下的 mstsc 工具直接连接，帐号即上文中的配置，易雾君强烈安利各位条件允许的话部署 Jumpserver 接入，自适应分辨率，体验尤佳。感受下真容
-
-![Screenshot_2020-11-06_08-34-44.png](./images/Screenshot_2020-11-06_08-34-44.png)
-
 
