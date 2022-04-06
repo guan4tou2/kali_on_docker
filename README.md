@@ -4,7 +4,7 @@
 打开项目根目录下的 .env 环境变量配置文件，一定记得修改为自己的复杂密码，默认是很弱的。
 ```bash
 KALI_USER=kali
-KALI_PASSWORD=kali@123
+KALI_PASSWORD=kali@123!
 ```
 ### 构建镜像文件
 ```bash
