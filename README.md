@@ -47,7 +47,7 @@ ENTRYPOINT /etc/init.d/xrdp start && tail -F /var/log/xrdp-kali.log
 ```bash
 $ git clone https://github.com/guan4tou2/kali_on_docker.git
 $ cd kali_on_docker
-$ chmod 755 setup.sh
+$ chmod 755 app/setup.sh
 $ docker-compose up -d
 ```
 進入機器後執行`./setu.sh`設定root，安裝kali桌面與套件
