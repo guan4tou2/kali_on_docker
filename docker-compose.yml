@@ -29,7 +29,7 @@ services:
     ports:
       - "${EXPOSE_PORT}:${EXPOSE_PORT}"
     #   entrypoint: ["sh"]
-    working_dir: /data
+    working_dir: /
     volumes:
       - /dev/net:/dev/net:z
       - ./data:/data
