@@ -8,7 +8,7 @@ env KALI_USER=${KALI_USER} \
 
 RUN apt-get -y update && apt-get -y upgrade && \
    DEBIAN_FRONTEND=noninteractive apt-get install -y \
-   pciutils \
+   pciutils apt-utils\
    bash-completion && \
    apt-get autoremove -y && \
    apt-get clean
