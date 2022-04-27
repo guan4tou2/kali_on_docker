@@ -13,8 +13,8 @@ KALI_PASSWORD=kali@123!
 $ git clone https://github.com/guan4tou2/kali_on_docker.git
 $ cd kali_on_docker
 $ docker-compose up -d
-$ docker exec -it `docker ps -qf "name=kali_on_docker"` /bin/bash
-root@kali:/# ./setup.sh
+#$ docker exec -it `docker ps -qf "name=kali_on_docker"` /bin/bash
+#root@kali:/# ./setup.sh
 ```
 setup.sh安裝kali桌面與套件。
 
