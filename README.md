@@ -14,7 +14,6 @@ $ git clone https://github.com/guan4tou2/kali_on_docker.git
 $ cd kali_on_docker
 $ docker-compose up -d
 $ docker exec -it `docker ps -af "name=kali_on_docker"` /bin/bash
-root@kali:/data# cd ..
 root@kali:/# ./setup.sh
 ```
 setup.sh安裝kali桌面與套件。
