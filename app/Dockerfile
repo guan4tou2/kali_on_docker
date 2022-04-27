@@ -17,10 +17,10 @@ RUN mkdir /data
 ADD setup.sh /setup.sh
 RUN chmod 755 /setup.sh
 
-RUN apt-get -y install xorg xrdp iputils-ping
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install xorg xrdp iputils-ping kali-linux-large kali-desktop-xfce
 RUN useradd -ms /bin/bash $KALI_USER
 RUN echo "$KALI_USER:$KALI_PASSWORD" | chpasswd
-RUN echo "$KALI_USER    ALL=(ALL) ALL" >> /etc/sudoers
+RUN echo "$KALI_USER ALL=(ALL:ALL) ALL" >> /etc/sudoers
 
 EXPOSE 3389
 VOLUME /data /root /home/$KALI_USER
