@@ -27,7 +27,7 @@ services:
     privileged: true
     shm_size: 1073741824
     ports:
-      - "3389:3389"
+      - "${EXPOSE_PORT}:${EXPOSE_PORT}"
     #   entrypoint: ["sh"]
     working_dir: /data
     volumes:
